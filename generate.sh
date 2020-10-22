@@ -7,5 +7,5 @@ stack run -- style > index.css &&
 git checkout master &&
 git add . &&
 git commit -m $0 &&
-git push origin master 
-&& git checkout hs-page
+git push origin master &&
+git checkout hs-page
