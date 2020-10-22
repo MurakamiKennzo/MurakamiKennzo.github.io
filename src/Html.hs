@@ -87,17 +87,17 @@ websiteSection' Brief = do
       <> "you can contact me at the Contact Chapter."
   p $ "Here's my liked girl type, It's japanese star arimura kasumi."
   img ! alt "arimura kasumi"
-      ! src " https://i.ibb.co/jTcHhvB/arimura-kasumi.jpg"
+      ! src "https://i.niupic.com/images/2020/10/22/8U4e.jpg"
   p $ "Feel Happy to talk with me, neither the life or the technology."
 
 websiteSection' Technology = do
   p $ "As you already known, I'm a JavaScript and Haskell programmer. I'm addicted to Functional Programming."
   p $ "Let's look at some code about get all prime numbers Here. And First of all, The Javascript code here: "
   img ! alt "javascript-primes"
-      ! src "https://i.ibb.co/q1J1vdX/javascript-primes.png"
+      ! src "https://i.niupic.com/images/2020/10/22/8U4b.png"
   p $ "Here's the Haskell code: "
   img ! alt "haskell-primes"
-      ! src "https://i.ibb.co/JFfv1BG/haskell-primes.png"
+      ! src "https://i.niupic.com/images/2020/10/22/8U4c.png"
   p $ "Oh, by the way, I'm also can talk some japanese and get a N2 certificate. If you'd like japanese, can chat me with it."
 
 websiteSection' Life = do
@@ -110,7 +110,7 @@ websiteSection' Work = do
   p $ "Now my work is a front-end developer, work in Hupu@Shanghai. "
   p $ "Here is one my company photo: "
   img ! alt "my company"
-      ! src "https://i.ibb.co/R6qmKfP/my-company.jpg"
+      ! src "https://i.niupic.com/images/2020/10/22/8U4d.jpg"
   p $ "I'd Happy to code and I will see some good future."
 
 websiteSection' Contact = do
