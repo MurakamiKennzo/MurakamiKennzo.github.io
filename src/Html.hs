@@ -30,9 +30,8 @@ allHtml = renderHtml $ do
       meta ! name "author"
            ! content "murakami"
       title $ "murakami -- JavaScript & Haskell Programmer"
-      H.style ! rel "stylesheet"
-              ! href "./index.css"
-              $ mempty
+      link ! rel "stylesheet"
+           ! href "./index.css"
     body $ do
       let navs = [ Brief 
                  , Technology 
