@@ -28,10 +28,10 @@ allHtml = renderHtmlBuilder $ do
                 toHtml allStyle
     body $ do
       let navs = [ Brief 
-                  , Technology 
-                  , Life
-                  , Work
-                  , Contact ]
+                 , Technology 
+                 , Life
+                 , Work
+                 , Contact ]
       websiteHeader
       websiteNavbar navs
       websiteMain navs
@@ -79,12 +79,9 @@ websiteSection' Brief = do
       <> "the name is my japanese name and I love somehow japanese culture. "
   p $ "I'm 26 years old. And as your surprise, I'm not have a girl friend now. If you're a girl and interested with me, "
       <> "you can contact me at the Contact Chapter."
-  p $ "Here is one of My recent photo: "
-  img ! alt "my photo"
-      ! src "https://img.iplaysoft.com/wp-content/uploads/2019/free-images/free_stock_photo.jpg!0x0.webp"
-  p $ "I'm graduated from Chang'an University. Here's one of my school photo: "
-  img ! alt "my school"
-      ! src "https://img.iplaysoft.com/wp-content/uploads/2019/free-images/free_stock_photo.jpg!0x0.webp"
+  p $ "Here's my liked girl type, It's japanese star arimura kasumi."
+  img ! alt "arimura kasumi"
+      ! src ""
   p $ "Feel Happy to talk with me, neither the life or the technology."
 
 websiteSection' Technology = do
@@ -106,7 +103,7 @@ websiteSection' Life = do
 websiteSection' Work = do
   p $ "Now my work is a front-end developer, work in Hupu@Shanghai. "
   p $ "Here is one my company photo: "
-  img ! alt ""
+  img ! alt "my company"
       ! src "https://img.iplaysoft.com/wp-content/uploads/2019/free-images/free_stock_photo.jpg!0x0.webp"
   p $ "I'd Happy to code and I will see some good future."
 
@@ -124,11 +121,4 @@ data Nav = Brief
          | Technology
          | Life
          | Work
-         | Contact
-
-instance Show Nav where
-  show Brief = "Brief"
-  show Technology = "Technology"
-  show Life = "Life"
-  show Work = "Work"
-  show Contact = "Contact"
+         | Contact deriving (Show)

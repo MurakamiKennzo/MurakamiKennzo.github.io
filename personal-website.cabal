@@ -1,0 +1,84 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 97c4790abc4242988d88677847ff2942a1222d02614415b33cc57d6e5209ea2a
+
+name:           personal-website
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/MurakamiKennzo/MurakamiKennzo.github.io#readme>
+homepage:       https://github.com/MurakamiKennzo/MurakamiKennzo.github.io#readme
+bug-reports:    https://github.com/MurakamiKennzo/MurakamiKennzo.github.io/issues
+author:         murakami
+maintainer:     w18191263056@yahoo.co.jp
+copyright:      2020 murakami
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/MurakamiKennzo/MurakamiKennzo.github.io
+
+library
+  exposed-modules:
+      Html
+      Style
+  other-modules:
+      Paths_personal_website
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , binary
+    , blaze-html
+    , clay
+    , http-types
+    , text
+    , wai
+    , warp
+  default-language: Haskell2010
+
+executable personal-website-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_personal_website
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , binary
+    , blaze-html
+    , clay
+    , http-types
+    , personal-website
+    , text
+    , wai
+    , warp
+  default-language: Haskell2010
+
+test-suite personal-website-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_personal_website
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , binary
+    , blaze-html
+    , clay
+    , http-types
+    , personal-website
+    , text
+    , wai
+    , warp
+  default-language: Haskell2010
