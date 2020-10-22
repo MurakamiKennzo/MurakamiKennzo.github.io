@@ -9,23 +9,30 @@ import Prelude hiding ( div
                       , head
                       , id )
 import Text.Blaze.Html5 as H
-import Text.Blaze.Html5.Attributes
-import Text.Blaze.Html.Renderer.Utf8
+import Text.Blaze.Html5.Attributes hiding ( title )
+import Text.Blaze.Html.Renderer.Text
 import Control.Monad
 import Data.Binary.Builder
-import Style
+import Data.Text.Lazy ( Text )
 
-allHtml :: Builder
-allHtml = renderHtmlBuilder $ do
+allHtml :: Text
+allHtml = renderHtml $ do
   docType
   html $ do
     head $ do
       meta ! charset "UTF-8"
       meta ! name "viewport"
            ! content "width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0"
-      H.style ! rel "text/stylesheet"
-              $ do
-                toHtml allStyle
+      meta ! name "description"
+           ! content "murakami's personal website"
+      meta ! name "keywords"
+           ! content "murakami, Murakami Kennzo, JavaScript, Haskell"
+      meta ! name "author"
+           ! content "murakami"
+      title $ "murakami -- JavaScript & Haskell Programmer"
+      H.style ! rel "stylesheet"
+              ! href "./index.css"
+              $ mempty
     body $ do
       let navs = [ Brief 
                  , Technology 
@@ -36,7 +43,7 @@ allHtml = renderHtmlBuilder $ do
       websiteNavbar navs
       websiteMain navs
       websiteFooter
-      
+
 websiteHeader :: Html
 websiteHeader = header ! class_ "header"
   $ do
@@ -81,17 +88,17 @@ websiteSection' Brief = do
       <> "you can contact me at the Contact Chapter."
   p $ "Here's my liked girl type, It's japanese star arimura kasumi."
   img ! alt "arimura kasumi"
-      ! src ""
+      ! src "https://github.com/MurakamiKennzo/MurakamiKennzo.github.io/blob/hs-page/images/arimura-kasumi.jpg?raw=true"
   p $ "Feel Happy to talk with me, neither the life or the technology."
 
 websiteSection' Technology = do
   p $ "As you already known, I'm a JavaScript and Haskell programmer. I'm addicted to Functional Programming."
   p $ "Let's look at some code about get all prime numbers Here. And First of all, The Javascript code here: "
   img ! alt "javascript-primes"
-      ! src "https://img.iplaysoft.com/wp-content/uploads/2019/free-images/free_stock_photo.jpg!0x0.webp"
+      ! src "https://github.com/MurakamiKennzo/MurakamiKennzo.github.io/blob/hs-page/images/javascript-primes.png?raw=true"
   p $ "Here's the Haskell code: "
   img ! alt "haskell-primes"
-      ! src "https://img.iplaysoft.com/wp-content/uploads/2019/free-images/free_stock_photo.jpg!0x0.webp"
+      ! src "https://github.com/MurakamiKennzo/MurakamiKennzo.github.io/blob/hs-page/images/haskell-primes.png?raw=true"
   p $ "Oh, by the way, I'm also can talk some japanese and get a N2 certificate. If you'd like japanese, can chat me with it."
 
 websiteSection' Life = do
@@ -104,7 +111,7 @@ websiteSection' Work = do
   p $ "Now my work is a front-end developer, work in Hupu@Shanghai. "
   p $ "Here is one my company photo: "
   img ! alt "my company"
-      ! src "https://img.iplaysoft.com/wp-content/uploads/2019/free-images/free_stock_photo.jpg!0x0.webp"
+      ! src "https://github.com/MurakamiKennzo/MurakamiKennzo.github.io/blob/hs-page/images/my-company.jpg?raw=true"
   p $ "I'd Happy to code and I will see some good future."
 
 websiteSection' Contact = do
@@ -112,7 +119,7 @@ websiteSection' Contact = do
   ul $ do
     li $ a ! href "https://github.com/MurakamiKennzo" $ "GitHub"
     li $ a ! href "tel:18191263056" $ "Phone"
-    li $ a ! href "sms:18191263056?body=Hello, murakami!" $ "Message"
+    li $ a ! href "sms:18191263056" $ "Message"
     li $ a ! href "mailto:w18191263056@yahoo.co.jp" $ "Email"
 
 type Navs = [Nav]

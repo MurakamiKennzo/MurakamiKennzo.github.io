@@ -9,3 +9,5 @@ When I write code for my personal websites, I think it's so repetitive when I ju
 So, I'll choose a new one to write it and raise my passion(Actually, It's so bad feel when I choose blaze-html and clay, this is nothing you should use it in production and I just wanna fun). 
 
 What about blaze-html and clay? It's just a libiray in hackage and for Haskeller to write some html and css contents.
+
+Note: I'm do the wrong thing!
