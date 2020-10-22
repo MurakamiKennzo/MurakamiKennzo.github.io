@@ -94,7 +94,7 @@ websiteSection' Technology = do
   p $ "As you already known, I'm a JavaScript and Haskell programmer. I'm addicted to Functional Programming."
   p $ "Let's look at some code about get all prime numbers Here. And First of all, The Javascript code here: "
   img ! alt "javascript-primes"
-      ! src "https://i.niupic.com/images/2020/10/22/8U4b.png"
+      ! src "https://i.niupic.com/images/2020/10/22/8UaK.png"
   p $ "Here's the Haskell code: "
   img ! alt "haskell-primes"
       ! src "https://i.niupic.com/images/2020/10/22/8U4c.png"
