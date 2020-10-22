@@ -1,0 +1,184 @@
+
+html
+{
+  font-size   : 13.33vw;
+  line-height : 1;
+}
+
+body
+{
+  padding : 0 0 0 0;
+  margin  : 0 0 0 0;
+}
+
+body *
+{
+  -webkit-box-sizing : border-box;
+  -moz-box-sizing    : border-box;
+  -ms-box-sizing     : border-box;
+  -o-box-sizing      : border-box;
+  box-sizing         : border-box;
+}
+
+body a
+{
+  text-decoration : none;
+  color           : #3887be;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6
+{
+  margin : 0 0 0 0;
+}
+
+.header
+{
+  position         : fixed;
+  top              : 0;
+  left             : 0;
+  right            : 0;
+  height           : 2.39999rem;
+  color            : #222222;
+  background-image : -webkit-linear-gradient(top,#af5000 0%,#ffb446 100%);
+  background-image : -moz-linear-gradient(top,#af5000 0%,#ffb446 100%);
+  background-image : -ms-linear-gradient(top,#af5000 0%,#ffb446 100%);
+  background-image : -o-linear-gradient(top,#af5000 0%,#ffb446 100%);
+  background-image : linear-gradient(top,#af5000 0%,#ffb446 100%);
+}
+
+.header #name
+{
+  margin           : 0 auto 0 auto;
+  width            : 6.5rem;
+  height           : 100%;
+  overflow         : hidden;
+  background-image : -webkit-radial-gradient(center,ellipse closest-side,rgba(255,255,0,0.58) 0%,rgba(255,255,0,9.0e-2) 50%,rgba(255,255,0,0.0) 75%);
+  background-image : -moz-radial-gradient(center,ellipse closest-side,rgba(255,255,0,0.58) 0%,rgba(255,255,0,9.0e-2) 50%,rgba(255,255,0,0.0) 75%);
+  background-image : -ms-radial-gradient(center,ellipse closest-side,rgba(255,255,0,0.58) 0%,rgba(255,255,0,9.0e-2) 50%,rgba(255,255,0,0.0) 75%);
+  background-image : -o-radial-gradient(center,ellipse closest-side,rgba(255,255,0,0.58) 0%,rgba(255,255,0,9.0e-2) 50%,rgba(255,255,0,0.0) 75%);
+  background-image : radial-gradient(center,ellipse closest-side,rgba(255,255,0,0.58) 0%,rgba(255,255,0,9.0e-2) 50%,rgba(255,255,0,0.0) 75%);
+}
+
+.header #name .name-container
+{
+  font-size      : 0.9rem;
+  color          : rgba(255,255,255,0.78);
+  text-shadow    : 0rem 0rem 0.2rem rgba(175,80,0,0.78);
+  font-weight    : normal;
+  letter-spacing : 0.14999rem;
+  text-align     : center;
+  margin         : 0.32rem 0 0 0;
+  line-height    : 1.47999;
+}
+
+.header #name .name-container .short-name
+{
+  color : rgba(255,255,255,0.78);
+}
+
+.header #name .profession
+{
+  font-size  : 0.34999rem;
+  color      : rgba(0,0,0,0.46);
+  text-align : center;
+  margin-top : 0.04rem;
+}
+
+.navbar
+{
+  position           : fixed;
+  top                : 2.39999rem;
+  left               : 0;
+  right              : 0;
+  text-align         : center;
+  background-color   : rgba(255,255,255,0.97);
+  -webkit-box-shadow : 0px 0px 1.19999rem rgba(0,0,0,7.0e-2);
+  -moz-box-shadow    : 0px 0px 1.19999rem rgba(0,0,0,7.0e-2);
+  -ms-box-shadow     : 0px 0px 1.19999rem rgba(0,0,0,7.0e-2);
+  -o-box-shadow      : 0px 0px 1.19999rem rgba(0,0,0,7.0e-2);
+  box-shadow         : 0px 0px 1.19999rem rgba(0,0,0,7.0e-2);
+  width              : 100%;
+  line-height        : 1;
+}
+
+.navbar .navbar-item
+{
+  display        : inline-block;
+  font-size      : 0.38rem;
+  color          : #3887be;
+  margin-right   : 0.16rem;
+  vertical-align : middle;
+  position       : relative;
+  top            : -0.08001rem;
+}
+
+.navbar .navbar-item:last-of-type
+{
+  margin-right : 0;
+}
+
+
+.main .article
+{
+  height : 3.37999rem;
+  width  : 7.5rem;
+}
+
+.section
+{
+  margin-top : -2.98rem;
+  padding    : 3.37999rem 0.2rem 0 0.2rem;
+  font-size  : 0.32rem;
+}
+
+.section .section-title
+{
+  color         : #00376e;
+  font-weight   : bold;
+  font-size     : 0.41999rem;
+  margin-bottom : 0.22rem;
+}
+
+.section > p
+{
+  margin      : 0.16rem 0px 0.16rem 0px;
+  line-height : 1.47999;
+}
+
+.section > img
+{
+  display : block;
+  width   : 100%;
+  height  : auto;
+}
+
+.section > ul
+{
+  padding-left : 0.59999rem;
+}
+
+.section > ul > li
+{
+  margin : 0.16rem 0px 0.16rem 0px;
+}
+
+.footer
+{
+  color      : rgba(0,0,0,0.58);
+  font-size  : 0.28rem;
+  text-align : center;
+  border-top : solid 0.01rem rgba(0,0,0,7.0e-2);
+}
+
+.footer > p
+{
+  margin : 0.35999rem 0px 0.35999rem 0px;
+}
+
+
+/* Generated with Clay, http://fvisser.nl/clay */
